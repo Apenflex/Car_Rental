@@ -1,0 +1,54 @@
+:root {
+    // Fonts
+    --primary-font: 'Barlow Condensed', sans-serif;
+    --secondary-font: 'Ubuntu', sans-serif;
+    // Colors
+    --primary-color: rgb(246, 196, 61);
+    --secondary-color: rgb(16, 136, 228);
+    --text-color: rgb(137, 137, 137);
+    --title-color-dark: rgb(34, 34, 34);
+    --title-color-light: rgb(255, 255, 255);
+    --burger-color: rgb(34, 34, 34);
+    --burger-bg-color: rgb(255, 255, 255);
+    --btn-light-text-color: rgb(255, 255, 255);
+    --btn-dark-bg-color: rgb(16, 136, 228);
+    --btn-dark-hover-color: rgb(246, 196, 61);
+    --link-header-hover: rgb(246, 196, 61);
+    --icons-header-hover: rgb(255, 187, 2);
+    --icons-header-color: rgb(246, 196, 61);
+    --icons-header-text-color: rgb(255, 255, 255);
+    --icons-light-color: rgb(255, 255, 255);
+    --icons-footer-color: rgb(34, 34, 34);
+}
+
+* {
+    font-family: 'Barlow Condensed', 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 765px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
