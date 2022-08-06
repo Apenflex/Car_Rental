@@ -3,3 +3,64 @@
     min-height: 730px;
     background: url('../img/main_section/main_section_bg_min.png') 35% center / cover no-repeat;
 }
+
+.wrapper__rental {
+    display: flex;
+    padding-top: 90px;
+}
+.main__rental {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+}
+.rental-text {
+    font-size: 18px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    position: relative;
+    margin-left: 25px;
+    @include before_divider-blue;
+}
+.rental-text span {
+    color: var(--secondary-color);
+}
+.rental__title {
+    font-size: 200px;
+    line-height: 180px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .rental__title {
+        font-size: 160px;
+        line-height: 160px;
+    }
+}
+@media (max-width: 576px) {
+    .rental__title {
+        font-size: 100px;
+        line-height: 110px;
+    }
+}
+.rental__buttons {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+.learn__btn:hover {
+    background-color: var(--btn-dark-hover-color);
+    transition: 0.4s;
+}
+.pricing__btn {
+    background: unset;
+    color: var(--primary-color);
+    width: 130px;
+}
+.pricing__btn:hover {
+    text-decoration: underline;
+}
+.pricing__btn i {
+    margin: 0 9px;
+}

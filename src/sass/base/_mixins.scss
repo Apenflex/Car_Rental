@@ -1,0 +1,22 @@
+@mixin before_divider-blue {
+    &::before {
+        content: "";
+        height: 3px;
+        width: 22px;
+        position: absolute;
+        background-color: var(--secondary-color);
+        top: 11px;
+        left: -25px;
+    }
+}
+@mixin before_divider-yellow {
+    &::before {
+        content: "";
+        height: 3px;
+        width: 22px;
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 11px;
+        left: -25px;
+    }
+}
