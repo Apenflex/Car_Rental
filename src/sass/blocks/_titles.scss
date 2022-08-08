@@ -1,0 +1,11 @@
+.title {
+    font-family: var(--primary-font);
+    font-size: 65px;
+    font-weight: 700;
+    color: var(--title-color-dark);
+}
+@media (max-width: 576px) {
+    .title {
+        font-size: 60px;
+    }
+}

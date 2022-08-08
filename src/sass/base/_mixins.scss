@@ -12,11 +12,11 @@
 @mixin before_divider-yellow {
     &::before {
         content: "";
-        height: 3px;
-        width: 22px;
+        height: 2px;
+        width: 17px;
         position: absolute;
         background-color: var(--primary-color);
-        top: 11px;
+        top: 7px;
         left: -25px;
     }
 }

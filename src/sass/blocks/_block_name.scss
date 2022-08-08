@@ -1,0 +1,10 @@
+.block_name {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-left: 25px;
+    position: relative;
+    @include before_divider-yellow;
+}
