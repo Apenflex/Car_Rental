@@ -1,0 +1,17 @@
+.offer {
+    min-height: 1000px;
+    padding: 110px 0;
+    background: var(--sections-bg-color-dark);
+}
+.title__offer {
+    color: var(--title-color-light);
+    margin-top: 30px;
+}
+.subtitle__offer {
+    margin-top: 15px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    line-height: 30px;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 .responsibility {
     padding: 120px 0;
     min-height: 1025px;
-    background: url('../img/responsibility/main_bg.webp') no-repeat 100% 90%;
+    background: url('../img/responsibility/main_bg.webp') no-repeat 55% 90%;
     background-attachment: fixed;
 }
 @media (max-width: 576px) {
@@ -180,6 +180,7 @@
     font-size: 90px;
     color: var(--secondary-color);
     text-align: center;
+    letter-spacing: -3px;
 }
 @media (max-width: 768px) {
     .items-number {
