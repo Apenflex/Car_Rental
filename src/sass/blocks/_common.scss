@@ -8,21 +8,29 @@
     --text-color: rgb(137, 137, 137);
     --title-color-dark: rgb(34, 34, 34);
     --title-color-light: rgb(255, 255, 255);
+    --burger-color: rgb(34, 34, 34);
+    --burger-bg-color: rgb(255, 255, 255);
+    --link-header-hover: rgb(246, 196, 61);
+
     --sections-bg-color: rgb(245, 245, 245);
     --sections-bg-color-dark: rgb(34, 34, 34);
+
     --cards-history-dark-color: rgb(2, 2, 4);
     --cards-history-light-dark-color: rgb(5, 7, 28);
     --cards-history-light-color: rgb(255, 255, 255);
     --cards-history-white-dark-color: rgb(221, 226, 233);
     --card-cars-bg-color: rgb(255, 255, 255);
-    --burger-color: rgb(34, 34, 34);
-    --burger-bg-color: rgb(255, 255, 255);
+    --card-request-bg-color: rgb(255, 255, 255);
+
+    --border-input-request-color: rgba(137, 137, 137,0.1);
+    --placeholder-color: rgba(137, 137, 137,0.6);
+
     --btn-light-text-color: rgb(255, 255, 255);
     --btn-dark-bg-color: rgb(16, 136, 228);
     --btn-dark-hover-color: rgb(246, 196, 61);
     --btn-light-bg-color: rgb(246, 196, 61);
     --btn-light-hover-color: rgb(16, 136, 228);
-    --link-header-hover: rgb(246, 196, 61);
+    
     --icons-header-hover: rgb(255, 187, 2);
     --icons-header-color: rgb(246, 196, 61);
     --icons-header-text-color: rgb(255, 255, 255);
@@ -38,13 +46,11 @@
     scroll-behavior: smooth;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
 @media (max-width: 992px) {
     .container {
         max-width: 900px;
