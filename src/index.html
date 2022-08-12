@@ -284,19 +284,45 @@
                 <div class="section_name-request block_name">SEND A REQUEST</div>
                 <div class="title__request title">Need to Rent a Luxury Car?</div>
                 <div class="subtitle__request">Complete the form below and we'll contact you as soon as possible!</div>
-                <form id="form_request" method="POST">
+                <form id="form_request" class="form" method="POST">
                     <input name="name" placeholder="Enter your full name*" required type="text">
                     <input name="phone" placeholder="Enter your phone number*" required type="tel">
                     <input name="email" placeholder="Enter your e-mail*" required type="email">
-                    <input name="message" placeholder="Type your message" type="text" value maxlength="2000">
-                    <button class="button_offer btn" type="submit">REQUEST A QUOTE</button>
+                    <input name="message" placeholder="Type your message" type="text" value maxlength="750">
+                    <button class="button_offer btn">REQUEST A QUOTE</button>
                 </form>
             </div>
+        </div>
+    </section>
+    <div class="overlay_block">
+        <div class="modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32">
+                    <g>
+                    <path fill="#f6c43d" d="M18.32 32c-1.51 0-2.93-.62-3.997-1.746-.43-.455-.43-1.19 0-1.645.43-.455 1.128-.455 1.558 0 .653.686 1.52 1.065 2.44 1.065.92 0 1.787-.38 2.438-1.066l19.03-20.077c.652-.687 1.01-1.6 1.01-2.572 0-.97-.358-1.885-1.01-2.572-1.344-1.418-3.532-1.418-4.876 0L24.31 14.573c-.43.454-1.13.454-1.56 0-.43-.454-.43-1.19 0-1.644L33.354 1.743c2.204-2.325 5.79-2.325 7.994 0 2.204 2.325 2.204 6.108 0 8.433l-19.03 20.077C21.25 31.38 19.83 32 18.32 32z">
+                    </path>
+                    <path fill="#f6c43d" fill-opacity=".359" d="M24 26.134l-3.295 3.44c-1.82 1.9-4.77 1.9-6.59 0L2.365 17.307c-1.82-1.9-1.82-4.98 0-6.88 1.82-1.9 4.77-1.9 6.59 0L24 26.133z">
+                    </path>
+                    <path fill="#f6c43d" d="M18.053 32c-1.592 0-3.088-.645-4.214-1.817L1.742 17.59c-2.324-2.42-2.324-6.354 0-8.773C2.868 7.645 4.365 7 5.957 7c1.592 0 3.088.645 4.213 1.817L25.66 24.94c.453.473.453 1.24 0 1.712l-3.393 3.53C21.142 31.356 19.645 32 18.053 32zM5.957 9.42c-.97 0-1.884.393-2.57 1.108-1.42 1.475-1.42 3.876 0 5.352l12.096 12.592c.686.715 1.6 1.11 2.57 1.11.97 0 1.884-.395 2.57-1.11l2.572-2.676L8.527 10.528c-.686-.715-1.6-1.11-2.57-1.11z">
+                    </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="modal__subtitle modal_error_oops">Thank you!</div>
+            <div class="modal__descr modal_error">We will contact you shortly.</div>
+        </div>
+    </div>
+
+    <section class="offices">
+        <div class="contsiner">
+            
         </div>
     </section>
 
 
 
     <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
