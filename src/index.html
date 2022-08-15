@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <section class="rental__main">
@@ -213,7 +214,7 @@
 
                 <div class="right_block">
                     <div class="right-block_items">
-                        <h3 class="items-number title">10</h3>
+                        <h3 class="items-number title count" data-target="10">0</h3>
                         <div class="item-number">
                             <h4 class="items-title title">Years of experience</h4>
                             <div class="items-subtitle">We have the perfect reputation of a luxury car rental service.</div>
@@ -221,7 +222,7 @@
                     </div>
 
                     <div class="right-block_items">
-                        <h3 class="items-number title">450</h3>
+                        <h3 class="items-number title count" data-target="450">0</h3>
                         <div class="item-number">
                             <h4 class="items-title title">Clients per month</h4>
                             <div class="items-subtitle">We serve celebrities, entrepreneurs, tourists, etc.</div>
@@ -229,7 +230,7 @@
                     </div>
 
                     <div class="right-block_items">
-                        <h3 class="items-number title">80</h3>
+                        <h3 class="items-number title count" data-target="80">0</h3>
                         <div class="item-number">
                             <h4 class="items-title title">Cars available</h4>
                             <div class="items-subtitle">You can pick up a car at any convenient location.</div>
@@ -282,7 +283,7 @@
         <div class="container">
             <div class="card_request">
                 <div class="section_name-request block_name">SEND A REQUEST</div>
-                <div class="title__request title">Need to Rent a Luxury Car?</div>
+                <h2 class="title__request title">Need to Rent a Luxury Car?</h2>
                 <div class="subtitle__request">Complete the form below and we'll contact you as soon as possible!</div>
                 <form id="form_request" class="form" method="POST">
                     <input name="name" placeholder="Enter your full name*" required type="text">
@@ -315,14 +316,56 @@
     </div>
 
     <section class="offices">
-        <div class="contsiner">
-            
+        <div class="container">
+            <!-- <div class="swiper"> -->
+                <!-- Additional required wrapper -->
+                <!-- <div class="swiper-wrapper"> -->
+                  <!-- Slides -->
+                  <!-- <div class="swiper-slide"><img src="img/offices/oficess_slide_1_min.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/offices/oficess_slide_2_min.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/offices/oficess_slide_3_min.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/offices/oficess_slide_4_min.png" alt=""></div> -->
+                <!-- </div> -->
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+              
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> -->
+            <div class="wrapper_head offer_head">
+                <div class="section_name-offices block_name"> OFFICES</div>
+                <h2 class="title__offices title">Pick up Your Car</h2>
+                <div class="subtitle__offices">
+                    Our company is always ready to help people who urgently need an executive car. 
+                    Come to our office, fill out the documents, and pick up your car!
+                </div>
+            </div>
+            <div class="wrapper_offices">
+                <div class="offices_image">
+                    <img src="img/offices/oficess_slide_1_resized-min.png" alt="">
+                </div>
+                <div class="offices_image">
+                    <img src="img/offices/oficess_slide_2_resized-min.png" alt="">
+                </div>
+                <div class="offices_image">
+                    <img src="img/offices/oficess_slide_3_resized-min.png" alt="">
+                </div>
+                <div class="offices_image">
+                    <img src="img/offices/oficess_slide_4_resized-min.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
 
 
 
+
+    
     <script src="js/burger.js"></script>
-    <script src="js/form.js"></script>
+    <script defer src="js/counters.js"></script>
+    <script defer src="js/form.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="js/swiper.js"></script>
 </body>
 </html>
