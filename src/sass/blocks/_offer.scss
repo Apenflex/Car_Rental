@@ -3,6 +3,11 @@
     padding: 110px 0;
     background: var(--sections-bg-color-dark);
 }
+@media (max-width: 576px) {
+    .offer {
+        padding: 70px 0;
+    }
+}
 .title__offer {
     color: var(--title-color-light);
     margin-top: 30px;
