@@ -19,7 +19,13 @@
     display: flex;
     margin-top: 60px;
 }
+@media (max-width: 767.98px) {
+    .wrapper_rates {
+        flex-direction: column;
+    }
+}
 .rates_card {
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
     display: flex;
     flex-direction: column;
     width: 378px;
@@ -27,12 +33,43 @@
     background: var(--card-cars-bg-color);
     padding: 50px;
 }
+@media (max-width: 992px) {
+    .rates_card {
+        align-items: center;
+        padding: 9px;
+    }
+}
+@media (max-width: 767.98px) {
+    .rates_card {
+        margin-bottom: 30px;
+        padding: 40px;
+    }
+}
+@media (max-width: 431px) {
+    .rates_card {
+        width: 100%;
+    }
+}
 .rates_card-bg {
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/rates/rates_card_bg_resized_min.webp') center/cover no-repeat;
-    
     width: 414px;
     justify-content: center;
     min-height: 583px;
+}
+@media (max-width: 992px) {
+    .rates_card-bg {
+        min-height: 490px;
+    }
+}
+@media (max-width: 576px) {
+    .rates_card-bg {
+        width: 378px;
+    }
+}
+@media (max-width: 431px) {
+    .rates_card-bg {
+        width: 100%;
+    }
 }
 .rates_price span {
     font-size: 45px;
@@ -53,6 +90,12 @@
     font-weight: 600;
     letter-spacing: -1.8px;
     margin-top: 30px;
+}
+@media (max-width: 992px) {
+    .rates_price {
+        font-size: 80px;
+        line-height: 85px;
+    }
 }
 .rates_price-light {
     color: var(--title-color-light);
@@ -92,6 +135,11 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+@media (max-width: 992px) {
+    .rates-checked {
+        margin-right: 5px;
+    }
 }
 .rates_btn {
     margin-top: 60px;
