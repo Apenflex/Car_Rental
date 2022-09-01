@@ -1,0 +1,104 @@
+.rates {
+    min-height: 1065px;
+    padding: 110px 0 120px;
+    background: url('../img/rates/rates_bg.webp') center/cover no-repeat;
+}
+.title__rates  {
+    margin-top: 30px;
+}
+.subtitle__rates {
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+}
+.wrapper_rates {
+    align-items: center;
+    display: flex;
+    margin-top: 60px;
+}
+.rates_card {
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    max-height: 533px;
+    background: var(--card-cars-bg-color);
+    padding: 50px;
+}
+.rates_card-bg {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/rates/rates_card_bg_resized_min.webp') center/cover no-repeat;
+    
+    width: 414px;
+    justify-content: center;
+    min-height: 583px;
+}
+.rates_price span {
+    font-size: 45px;
+    font-family: var(--primary-font);
+    color: var(--title-color-dark);
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: -1.8px;
+    margin-top: 30px;
+}
+.rates_price-light span {
+    color: var(--title-color-light);
+}
+.rates_price {
+    font-size: 90px;
+    font-family: var(--primary-font);
+    line-height: 90px;
+    font-weight: 600;
+    letter-spacing: -1.8px;
+    margin-top: 30px;
+}
+.rates_price-light {
+    color: var(--title-color-light);
+}
+.rates_subtitle {
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 22px;
+    margin-top: 5px;
+    color: var(--text-color);
+}
+.rates_subtitle-light {
+    color: var(--title-color-light);
+}
+.rates_descr {
+    margin-top: 30px;
+}
+.rates_descr ul {
+    list-style: none;
+}
+.rates_descr li {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    line-height: 27px;
+    color: var(--text-color);
+    margin-top: 15px;
+}
+.rates_descr-light li {
+    color: var(--title-color-light);
+}
+.rates-checked {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.rates_btn {
+    margin-top: 60px;
+    width: 155px;
+    background: var(--btn-light-bg-color);
+}
+.rates_btn:hover {
+    background: var(--btn-light-hover-color);
+    transition: 0.4s;
+}
