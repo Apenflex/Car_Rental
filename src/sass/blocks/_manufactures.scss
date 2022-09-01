@@ -26,6 +26,7 @@
 @media (max-width: 576px) {
     .manufactures_content {
         padding: 15px;
+        margin: 0;
     }
 }
 .title__manufactures {
@@ -57,6 +58,11 @@
         justify-content: space-evenly;
     }
 }
+@media (max-width: 576px) {
+    .manufactures_slider {
+        margin: 0;
+    }
+}
 .manufactures_slider_item {
     align-items: center;
     display: flex;
@@ -74,6 +80,13 @@
     .manufactures_slider_item {
         max-width: 155px;
         max-height: 155px;
+    }
+}
+@media (max-width: 378px) {
+    .manufactures_slider_item {
+        max-width: 130px;
+        max-height: 130px;
+        margin: 3px 4px;
     }
 }
 .manufactures_slider_item img {
