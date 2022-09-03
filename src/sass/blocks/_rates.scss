@@ -3,6 +3,11 @@
     padding: 110px 0 120px;
     background: url('../img/rates/rates_bg.webp') center/cover no-repeat;
 }
+@media (max-width: 576px) {
+    .rates {
+        padding: 40px 0 20px;
+    }
+}
 .title__rates  {
     margin-top: 30px;
 }

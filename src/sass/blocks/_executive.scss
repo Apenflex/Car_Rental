@@ -1,12 +1,15 @@
 .executive {
-    min-height: 865px;
+    min-height: 840px;
     padding: 160px 0 170px;
     background: url('../img/executive/executive_bg.webp') 45% center/cover no-repeat;
 }
 @media (max-width: 576px) {
     .executive {
-        padding: 50px 0 0;
-        min-height: 770px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        min-height: 650px;
+        background: rgb(243, 243, 243);
     }
 }
 .wrapper__executive {
@@ -33,6 +36,7 @@
     .executive_block {
         flex-basis: 100%;
         align-items: center;
+        padding: 0;
     }
 }
 .title__executive {
@@ -59,6 +63,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+@media (max-width: 576px) {
+    .wrapper_buttons {
+        flex-wrap: unset;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .executive_contacts {
     margin: 10px;

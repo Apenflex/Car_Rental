@@ -3,6 +3,12 @@
     min-height: 700px;
     padding: 50px 0 60px;
 }
+@media (max-width: 576px) {
+    .about_us {
+        background: rgb(243, 243, 243);
+        padding: 40px 0 40px;
+    }
+}
 .wrapper__about_us {
     display: flex;
 }
