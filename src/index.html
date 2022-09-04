@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental</title>
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="rental__main">
@@ -17,11 +17,11 @@
                         <img src="icons/logo_header.svg" alt="logo company">
                     </div>
                     <div class="nav__menu">
-                        <a class="nav__menu-link" href="#">About us</a>
-                        <a class="nav__menu-link" href="#">Cars of the month</a>
-                        <a class="nav__menu-link" href="#">Pricing</a>
-                        <a class="nav__menu-link" href="#">Testimonials</a>
-                        <a class="nav__menu-link" href="#">Contact us</a>
+                        <a class="nav__menu-link" href="#about_us">About us</a>
+                        <a class="nav__menu-link" href="#offer">Cars of the month</a>
+                        <a class="nav__menu-link" href="#rates">Pricing</a>
+                        <a class="nav__menu-link" href="#feedback">Testimonials</a>
+                        <a class="nav__menu-link" href="#contacts">Contact us</a>
                         <div class="header__icons icons">
                             <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
@@ -40,14 +40,15 @@
                     <div class="rental-text">Сomfortable driving in <span>NYC</span></div>
                     <h1 class="rental__title">CAR RENTAL</h1>
                     <div class="rental__buttons">
-                        <a class="learn__btn btn" href="#">LEARN MORE</a>
-                        <a class="pricing__btn btn" href="#">PRICING<i class="fa-solid fa-angle-right"></i></a>
+                        <a class="learn__btn btn" href="#about_us">LEARN MORE</a>
+                        <a class="pricing__btn btn" href="#rates">PRICING<i class="fa-solid fa-angle-right"></i></a>
                         <span></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="rental-cars">
         <div class="container">
             <div class="wrapper__rental-cars">
@@ -56,7 +57,7 @@
                         <div class="cars-items_image"><img loading="lazy" src="img/main_section/main_section_cars_SUVs_min.png" alt="rental cars SUVs"></div>
                         <div class="cars-items-title">SUVs</div>
                         <div class="cars-items-subtitle">No obstacles on your way <br> can spoil the trip.</div>
-                        <a href="#" class="cars-items__btn btn">LEARN MORE</a>
+                        <a href="#request" class="cars-items__btn btn">LEARN MORE</a>
                     </div>
                 </div>
                 <div class="cars-card">
@@ -64,7 +65,7 @@
                         <div class="cars-items_image"><img loading="lazy" src="img/main_section/main_section_cars_sports-cars_min.png" alt="rental cars Sports"></div> 
                         <div class="cars-items-title">Sports Cars</div>
                         <div class="cars-items-subtitle">Feel what true speed <br> and freedom are.</div>
-                        <a href="#" class="cars-items__btn btn">LEARN MORE</a>
+                        <a href="#request" class="cars-items__btn btn">LEARN MORE</a>
                     </div>
                 </div>
                 <div class="cars-card">
@@ -72,14 +73,14 @@
                         <div class="cars-items_image"><img loading="lazy" src="img/main_section/main_section_cars_luxury_min.png" alt="rental cars Luxury"></div> 
                         <div class="cars-items-title">Luxury</div>
                         <div class="cars-items-subtitle">Comfortable cars for <br> demanding clients.</div>
-                        <a href="#" class="cars-items__btn btn">LEARN MORE</a>
+                        <a href="#request" class="cars-items__btn btn">LEARN MORE</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about_us">
+    <section id="about_us" class="about_us">
         <div class="container">
             <div class="wrapper__about_us">
                 <div class="about_block">
@@ -93,7 +94,7 @@
                         We have several pick-up locations in New York so that you can take and leave the rented car in any convenient place. 
                         FASTCAR offers the most favorable conditions for car rental.
                     </p>
-                    <a href="#" class="about_us-btn btn">CONTACT US</a>
+                    <a href="#request" class="about_us-btn btn">CONTACT US</a>
                 </div>
                 <div></div>
             </div>
@@ -205,7 +206,7 @@
                             <div class="item-descr">Different options for financial responsibility</div>
                         </div>
                     </div>
-                    <a href="#" class="responsibility-btn btn">LEARN MORE</a>
+                    <a href="#faq" class="responsibility-btn btn">LEARN MORE</a>
                 </div>
 
                 <div class="center_block">
@@ -241,7 +242,7 @@
         </div>
     </section>
 
-    <section class="offer">
+    <section id="offer" class="offer">
         <div class="container">
             <div class="wrapper_head offer_head">
                 <div class="section_name-offer block_name">BEST OFFER</div>
@@ -279,7 +280,7 @@
         </div>
     </section>
 
-    <section class="request">
+    <section id="request" class="request">
         <div class="container">
             <div class="card_request">
                 <div class="section_name-request block_name">SEND A REQUEST</div>
@@ -366,8 +367,8 @@
                     <h2 class="title__executive title">Executive Cars at Favorable Rates</h2> 
                     <div class="executive_subtitle">Rent a comfortable and good-looking car for any period. Corporate discounts are available.</div>
                     <div class="wrapper_buttons">
-                        <a href="#" class="executive_contacts btn">CONTACTS</a>
-                        <a href="#" class="executive_offers btn">BESTT OFFERS</a>
+                        <a href="#contacts" class="executive_contacts btn">CONTACTS</a>
+                        <a href="#offer" class="executive_offers btn">BESTT OFFERS</a>
                     </div>
                 </div>
             </div>
@@ -414,7 +415,7 @@
         </div>
     </section>
 
-    <section class="rates">
+    <section id="rates" class="rates">
         <div class="container">
             <div class="wrapper_head rates_head">
                 <div class="section_name-rates block_name">RATES</div>
@@ -438,7 +439,7 @@
                             <li><img loading="lazy" class="rates-checked" src="icons/rates/rates_checked.svg" alt="checked the car">Suzuki Escudo or similar</li>
                         </ul>
                     </div>
-                    <a href="" class="rates_btn btn">RENT A CAR</a>
+                    <a href="#request" class="rates_btn btn">RENT A CAR</a>
                 </div>
 
                 <div class="rates_card rates_card-bg">
@@ -452,7 +453,7 @@
                             <li><img loading="lazy" class="rates-checked" src="icons/rates/rates_checked.svg" alt="checked the car">Audi A6 or similar</li>
                         </ul>
                     </div>
-                    <a href="" class="rates_btn btn">RENT A CAR</a>
+                    <a href="#request" class="rates_btn btn">RENT A CAR</a>
                 </div>
 
                 <div class="rates_card">
@@ -466,7 +467,7 @@
                             <li><img loading="lazy" class="rates-checked" src="icons/rates/rates_checked.svg" alt="checked the car">Ford GT or similar</li>
                         </ul>
                     </div>
-                    <a href="" class="rates_btn btn">RENT A CAR</a>
+                    <a href="#request" class="rates_btn btn">RENT A CAR</a>
                 </div>
             </div>
         </div>
@@ -529,7 +530,7 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section id="feedback" class="feedback">
         <div class="container">
             <div class="wrapper_head rates_head">
                 <div class="section_name-feedback block_name">FEEDBACK</div>
@@ -597,7 +598,7 @@
 
     </section>
 
-    <section class="faq">
+    <section id="faq" class="faq">
         <div class="container">
             <div class="wrapper_head rates_head">
                 <div class="section_name-faq block_name">FAQ</div>
@@ -664,7 +665,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="wrapper_contacts">
             <div class="contacts_content">
                 <div class="contacts_block">
@@ -682,18 +683,37 @@
                         <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                     </div>
-                    <a href="" class="contacts_btn btn">RENT A CAR</a>
+                    <a href="#request" class="contacts_btn btn">RENT A CAR</a>
                 </div>
             </div>
-            
+
             <div class="contacts_map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9591471188864!2d-73.9983822852261!3d40.74092444378365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bc954b73a7%3A0xef2172fc12351c90!2zMTMwIFcgMTl0aCBTdCwgTmV3IFlvcmssIE5ZIDEwMDExLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1662213053073!5m2!1suk!2sua" width="100%" height="570" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
-
     </section>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_items">
+                <div class="footer_links-logo">
+                    <img src="icons/logo_footer.svg" alt="logo company">
+                </div>
+                <div class="footer_links">
+                    <a href="#about_us">About us</a>
+                    <a href="#offer">Cars of the month</a>
+                    <a href="#rates">Pricing</a>
+                    <a href="#feedback">Testmonials</a>
+                    <a href="#contacts">Contact us</a>
+                </div>
+            </div>
+            <div class="footer_rights">
+                <div class="rights-text">© Created by</div>
+                <div class="rights-text">All rights Reserved</div>
+            </div>
+        </div>
+    </footer>
     
     <script src="js/burger.js"></script>
     <script defer src="js/counters.js"></script>
