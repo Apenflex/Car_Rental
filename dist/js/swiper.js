@@ -60,6 +60,9 @@ const swiperBrands = new Swiper('.swiperBrands', {
       slidesPerView: 1,
       
     },
+    576: {
+      slidesPerView: 2,
+    },
     // when window width is >= 480px
     768: {
       slidesPerView: 2,

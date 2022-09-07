@@ -11,6 +11,22 @@
 .manufactures_wrapper {
     display: flex;
 }
+@media (max-width: 767px) {
+    .manufactures_wrapper {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    .swiperBrands {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .swiper-wrapper-brands {
+        margin-bottom: 40px;
+    }
+}
 .manufactures_content {
     display: flex;
     flex-direction: column;
@@ -43,7 +59,8 @@
     max-width: 227px;
     max-height: 191px;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.06)
+    background: rgba(255, 255, 255, 0.06);
+    margin: auto;
 }
 .manufactures_slider_item img {
     display: block;
