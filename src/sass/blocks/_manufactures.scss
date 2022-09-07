@@ -39,6 +39,11 @@
         padding: 10px;
     }
 }
+@media (max-width: 767px) {
+    .manufactures_content {
+        flex-basis: 100%;
+    }
+}
 .title__manufactures {
     color: var(--title-color-light);
     margin-top: 30px;
@@ -52,6 +57,11 @@
 }
 .manufactures_slider {
     flex-basis: 67%;
+}
+@media (max-width: 767px) {
+    .manufactures_slider {
+        flex-basis: 100%;
+    }
 }
 .manufactures_slider_item {
     align-items: center;
