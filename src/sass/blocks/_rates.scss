@@ -155,3 +155,53 @@
     background: var(--btn-light-hover-color);
     transition: 0.4s;
 }
+
+.calculating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.calculating__field {
+    display: flex;
+}
+.calculating-block1, .calculating-block2, .calculating__total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px;
+}
+.calculating__subtitle {
+    font-size: 40px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--title-color-dark);
+    text-align: center;
+    margin-top: 15px;
+}
+.calculating__choose {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top:45px;
+}
+.btn__choose {
+    width: 135px;
+    height: 40px;
+    padding: 11px;
+    background: var(--btn-light-bg-color);
+}
+.btn__choose:hover {
+    cursor: pointer;
+}
+.btn__choose_active {
+    background: var(--btn-dark-bg-color);
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+}
+.calculating__result {
+    font-size: 50px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    margin: auto;
+}

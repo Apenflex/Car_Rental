@@ -58,17 +58,17 @@ const swiperBrands = new Swiper('.swiperBrands', {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      
     },
+    // when window width is >= 576px
     576: {
       slidesPerView: 2,
     },
-    // when window width is >= 480px
+    // when window width is >= 768px
     768: {
       slidesPerView: 2,
       
     },
-    // when window width is >= 640px
+    // when window width is >= 992px
     992: {
       slidesPerView: 3,
       
