@@ -9,6 +9,11 @@ swiperOpen.forEach(function (item) {
     });
 });
 
+swiperOverlay.addEventListener("click", function (e) {
+    if (swiperOverlay.classList.contains("overlay_swiper_active")) {
+        swiperOverlay.classList.remove("overlay_swiper_active");
+    }
+});
 
 swiperCloseButton.addEventListener("click", function (e) {
         if (swiperOverlay.classList.contains("overlay_swiper_active")) {
