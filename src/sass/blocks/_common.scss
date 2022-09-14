@@ -1,7 +1,7 @@
 :root {
     // Fonts
-    --primary-font: 'Barlow Condensed', sans-serif;
-    --secondary-font: 'Ubuntu', sans-serif;
+    --primary-font: 'Barlow Condensed';
+    --secondary-font: 'Ubuntu';
     // Colors
     --primary-color: rgb(246, 196, 61);
     --secondary-color: rgb(16, 136, 228);
@@ -50,7 +50,8 @@
 }
 
 * {
-    font-family: 'Barlow Condensed', 'Ubuntu', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
