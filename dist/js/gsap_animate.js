@@ -1,19 +1,22 @@
-gsap.fromTo(
+const rentalMainTimeLine = gsap.timeline();
+
+rentalMainTimeLine.fromTo(
     ".header__logo",
     { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 1, delay: 0.5 }
-);
-
-gsap.fromTo(
+    { opacity: 1, x: 0, duration: 1.2 },
+    1,
+)
+.fromTo(
     ".nav__menu a", 
     { opacity: 0, y: -100 }, 
-    { opacity: 1, y: 0, duration: 1, delay: 1.4, stagger: 0.2 }
-);
-
-gsap.fromTo(
+    { opacity: 1, y: 0, duration: 1.2, stagger: 0.2 },
+    1.7,
+)
+.fromTo(
     ".rental-text",
     { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 1, delay: 1.2 }
+    { opacity: 1, x: 0, duration: 2.2 },
+    2,
 );
 
 // Scroll animation rental-cars
@@ -76,11 +79,33 @@ gsap.from(".about_us-btn", {
 });
 
 // Scroll animation history
-const historyTimeLine = gsap.timeline();
-historyTimeLine
-    .from(".history_card-black", { x: -500, opacity: 0, duration: 1  })
-    .from(".history_card-white", { x: -500 })
-    .from(".history_card-black-light", { x: -1500 })
-    .from(".history_card-white-dark", { x: -3500 });
+ScrollTrigger.create({
+    trigger: ".history_card-black",
+    start: "top top",
+    markers: true,
+    end: "+=300",
+    pin: true,
+});
+ScrollTrigger.create({
+    trigger: ".history_card-white",
+    start: "top top",
+    markers: true,
+    end: "+=300",
+    pin: true,
+});
+ScrollTrigger.create({
+    trigger: ".history_card-black-light",
+    start: "top top",
+    markers: true,
+    end: "+=300",
+    pin: true,
+});
+ScrollTrigger.create({
+    trigger: ".history_card-white-dark",
+    start: "top top",
+    markers: true,
+    end: "+=100",
+    pin: true,
+});
 
 
