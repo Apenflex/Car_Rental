@@ -29,7 +29,6 @@ const swiperFeedback = new Swiper('.swiperFeedback', {
   // loop: true,
   // loopedSlides : 3,
   
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
