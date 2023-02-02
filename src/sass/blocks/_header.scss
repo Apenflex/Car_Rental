@@ -62,12 +62,18 @@ header {
     color: var(--link-header-hover);
     transition: 0.2s;
 }
-.nav__menu-link:hover::before {
-    border-top: 2px var(--link-header-hover) solid;
+.nav__menu-link::before {
     content: '';
-    top: 100%;
-    left: 0;
     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--link-header-hover);
+    transition: width 0.5s;
+//     border-top: 2px var(--link-header-hover) solid;
+}
+.nav__menu-link:hover::before {
     width: 100%;
 }
 .header__icons a:hover {
