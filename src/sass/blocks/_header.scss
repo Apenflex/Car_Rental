@@ -62,7 +62,7 @@ header {
     color: var(--link-header-hover);
     transition: 0.2s;
 }
-a.nav__menu-link::before {
+.nav__menu-link::before {
     content: '';
     position: absolute;
     left: 0;
@@ -73,7 +73,7 @@ a.nav__menu-link::before {
     transition: width 0.5s;
 //     border-top: 2px var(--link-header-hover) solid;
 }
-a.nav__menu-link:hover::before {
+.nav__menu-link:hover::before {
     width: 100%;
 }
 .header__icons a:hover {
