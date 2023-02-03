@@ -3,9 +3,14 @@
     font-size: 65px;
     font-weight: 700;
     color: var(--title-color-dark);
-}
-@media (max-width: 576px) {
-    .title {
+    @media (max-width: 576px) {
         font-size: 60px;
     }
+}
+.wrapper_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
 }

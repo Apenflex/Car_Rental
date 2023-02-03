@@ -1,4 +1,4 @@
-const swiperOpen = document.querySelectorAll(".offices_image");
+const swiperOpen = document.querySelectorAll(".offices_wrapper_image");
 const swiperOverlay = document.querySelector(".overlay_swiper_block");
 const swiperCloseButton = document.querySelector(".swiper__close");
 

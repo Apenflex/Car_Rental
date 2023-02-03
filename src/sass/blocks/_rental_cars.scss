@@ -2,54 +2,52 @@
     min-height: 650px;
     padding-bottom: 60px;
     background: var(--sections-bg-color);
-}
-.wrapper__rental-cars {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.cars-items {
-    align-items: center;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    max-width: 370px;
-    max-height: 587px;
-    display: flex;
-    flex-direction: column;
-    padding: 65px 25px;
-    background: var(--card-cars-bg-color);
-}
-@media (max-width: 400px) {
-    .cars-items {
-        padding: 30px 25px;
+    .wrapper__rental-cars {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        .cars-items {
+            align-items: center;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            max-width: 370px;
+            max-height: 587px;
+            display: flex;
+            flex-direction: column;
+            padding: 65px 25px;
+            background: var(--card-cars-bg-color);
+            @media (max-width: 400px) {
+                padding: 30px 25px;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+            &-title {
+                font-size: 34px;
+                font-family: var(--primary-font);
+                font-weight: 600;
+                margin-top: 20px;
+                color: var(--title-color-dark);
+            }
+            &-subtitle {
+                color: var(--text-color);
+                font-size: 17px;
+                font-family: var(--secondary-font);
+                font-weight: 400;
+                margin-top: 25px;
+                text-align: center;
+                line-height: 28px;
+            }
+            &__btn {
+                margin-top: 55px;
+                background: var(--btn-light-bg-color);
+                &:hover {
+                    background: var(--btn-light-hover-color);
+                    transition: 0.4s;
+                }
+            }
+        }
     }
-}
-.cars-items_image img {
-    display: block;
-    width: 100%;
-}
-.cars-items-title {
-    font-size: 34px;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    margin-top: 20px;
-    color: var(--title-color-dark);
-}
-.cars-items-subtitle {
-    color: var(--text-color);
-    font-size: 17px;
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    margin-top: 25px;
-    text-align: center;
-    line-height: 28px;
-}
-.cars-items__btn {
-    margin-top: 55px;
-    background: var(--btn-light-bg-color);
-}
-.cars-items__btn:hover {
-    background: var(--btn-light-hover-color);
-    transition: 0.4s;
 }

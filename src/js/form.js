@@ -1,9 +1,9 @@
 (function () {
     const modalOverlay = document.querySelector(".overlay_block");
-    const submitModal = document.querySelector(".button_offer");
+    const submitModal = document.querySelector(".request_button");
     const modalCloseButtons = document.querySelectorAll(".modal__close");
     const modalMini = document.querySelector(".modal_mini");
-    const form = document.querySelector(".form");
+    const form = document.querySelector(".request__form");
   
     modalCloseButtons.forEach(function (item) {
       item.addEventListener("click", function (e) {

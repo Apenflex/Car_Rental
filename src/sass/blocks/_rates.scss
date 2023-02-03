@@ -2,158 +2,137 @@
     min-height: 1065px;
     padding: 110px 0 120px;
     background: url('../img/rates/rates_bg.webp') center/cover no-repeat;
-}
-@media (max-width: 576px) {
-    .rates {
+    @media (max-width: 576px) {
         padding: 40px 0 20px;
     }
-}
-.title__rates  {
-    margin-top: 30px;
-}
-.subtitle__rates {
-    font-size: 20px;
-    font-family: var(--secondary-font);
-    color: var(--text-color);
-    text-align: center;
-    line-height: 30px;
-    margin-top: 15px;
-}
-.wrapper_rates {
-    align-items: center;
-    display: flex;
-    margin-top: 60px;
-}
-@media (max-width: 767.98px) {
-    .wrapper_rates {
-        flex-direction: column;
+    &__title {
+        margin-top: 30px;
     }
-}
-.rates_card {
-    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    display: flex;
-    flex-direction: column;
-    width: 378px;
-    max-height: 533px;
-    background: var(--card-cars-bg-color);
-    padding: 50px;
-}
-@media (max-width: 992px) {
-    .rates_card {
+    &__subtitle {
+        font-size: 20px;
+        font-family: var(--secondary-font);
+        color: var(--text-color);
+        text-align: center;
+        line-height: 30px;
+        margin-top: 15px;
+    }
+    &_wrapper {
         align-items: center;
-        padding: 9px;
+        display: flex;
+        margin-top: 60px;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
     }
-}
-@media (max-width: 767.98px) {
-    .rates_card {
-        margin-bottom: 30px;
-        padding: 40px;
-    }
-}
-@media (max-width: 431px) {
-    .rates_card {
-        width: 100%;
-    }
-}
-.rates_card-bg {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/rates/rates_card_bg_resized_min.webp') center/cover no-repeat;
-    width: 414px;
-    justify-content: center;
-    min-height: 583px;
-}
-@media (max-width: 992px) {
-    .rates_card-bg {
-        min-height: 490px;
-    }
-}
-@media (max-width: 576px) {
-    .rates_card-bg {
+    &_card {
+        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+        display: flex;
+        flex-direction: column;
         width: 378px;
+        max-height: 533px;
+        background: var(--card-cars-bg-color);
+        padding: 50px;
+        @media (max-width: 992px) {
+            align-items: center;
+            padding: 9px;
+        }
+        @media (max-width: 767.98px) {
+            margin-bottom: 30px;
+            padding: 40px;
+        }
+        @media (max-width: 431px) {
+            width: 100%;
+        }
+        &-bg {
+            background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/rates/rates_card_bg_resized_min.webp') center/cover no-repeat;
+            width: 414px;
+            justify-content: center;
+            min-height: 583px;
+            @media (max-width: 992px) {
+                min-height: 490px;
+            }
+            @media (max-width: 576px) {
+                width: 378px;
+            }
+            @media (max-width: 431px) {
+                width: 100%;
+            }
+        }
+        &_price {
+            font-size: 90px;
+            font-family: var(--primary-font);
+            line-height: 90px;
+            font-weight: 600;
+            letter-spacing: -1.8px;
+            margin-top: 30px;
+            @media (max-width: 992px) {
+                font-size: 80px;
+                line-height: 85px;
+            }
+            span {
+                font-size: 45px;
+                font-family: var(--primary-font);
+                color: var(--title-color-dark);
+                line-height: 45px;
+                font-weight: 600;
+                letter-spacing: -1.8px;
+                margin-top: 30px;
+            }
+            &-light {
+                color: var(--title-color-light);
+                span {
+                    color: var(--title-color-light);
+                }
+            }
+        }
+        &_subtitle {
+            font-size: 14px;
+            font-family: var(--secondary-font);
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            line-height: 22px;
+            margin-top: 5px;
+            color: var(--text-color);
+            &-light {
+                color: var(--title-color-light);
+            }
+        }
+        &_descr {
+            margin-top: 30px;
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                font-family: var(--secondary-font);
+                line-height: 27px;
+                color: var(--text-color);
+                margin-top: 15px;
+            }
+            &-light {
+                li {
+                    color: var(--title-color-light);
+                }
+            }
+            img {
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                @media (max-width: 992px) {
+                    margin-right: 5px;
+                }
+            }
+        }
     }
-}
-@media (max-width: 431px) {
-    .rates_card-bg {
-        width: 100%;
+    &_btn {
+        margin-top: 60px;
+        width: 155px;
+        background: var(--btn-light-bg-color);
+        &:hover {
+            background: var(--btn-light-hover-color);
+            transition: 0.4s;
+        }
     }
-}
-.rates_price span {
-    font-size: 45px;
-    font-family: var(--primary-font);
-    color: var(--title-color-dark);
-    line-height: 45px;
-    font-weight: 600;
-    letter-spacing: -1.8px;
-    margin-top: 30px;
-}
-.rates_price-light span {
-    color: var(--title-color-light);
-}
-.rates_price {
-    font-size: 90px;
-    font-family: var(--primary-font);
-    line-height: 90px;
-    font-weight: 600;
-    letter-spacing: -1.8px;
-    margin-top: 30px;
-}
-@media (max-width: 992px) {
-    .rates_price {
-        font-size: 80px;
-        line-height: 85px;
-    }
-}
-.rates_price-light {
-    color: var(--title-color-light);
-}
-.rates_subtitle {
-    font-size: 14px;
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    line-height: 22px;
-    margin-top: 5px;
-    color: var(--text-color);
-}
-.rates_subtitle-light {
-    color: var(--title-color-light);
-}
-.rates_descr {
-    margin-top: 30px;
-}
-.rates_descr ul {
-    list-style: none;
-}
-.rates_descr li {
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-family: var(--secondary-font);
-    line-height: 27px;
-    color: var(--text-color);
-    margin-top: 15px;
-}
-.rates_descr-light li {
-    color: var(--title-color-light);
-}
-.rates-checked {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-@media (max-width: 992px) {
-    .rates-checked {
-        margin-right: 5px;
-    }
-}
-.rates_btn {
-    margin-top: 60px;
-    width: 155px;
-    background: var(--btn-light-bg-color);
-}
-.rates_btn:hover {
-    background: var(--btn-light-hover-color);
-    transition: 0.4s;
 }
 
 .calculating {
@@ -162,50 +141,50 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-}
-.calculating__field {
-    display: flex;
-}
-@media (max-width: 767px) {
-    .calculating__field {
+    &__field {
+        display: flex;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__subtitle {
+        font-size: 40px;
+        font-family: var(--primary-font);
+        font-weight: 600;
+        color: var(--title-color-dark);
+        text-align: center;
+        margin-top: 15px;
+    }
+    &__choose {
+        display: flex;
         flex-direction: column;
+        gap: 30px;
+        margin-top: 45px;
+        @media (max-width: 767px) {
+            flex-direction: unset;
+        }
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+    &__result {
+        font-size: 50px;
+        font-family: var(--primary-font);
+        font-weight: 600;
+        margin: auto;
     }
 }
+
 .calculating-block1, .calculating-block2, .calculating__total {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 25px;
-}
-@media (max-width: 992px) {
-    .calculating-block1, .calculating-block2, .calculating__total {
+    @media (max-width: 992px) {
         margin: 0 10px;
     }
 }
-.calculating__subtitle {
-    font-size: 40px;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    color: var(--title-color-dark);
-    text-align: center;
-    margin-top: 15px;
-}
-.calculating__choose {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top:45px;
-}
-@media (max-width: 767px) {
-    .calculating__choose {
-        flex-direction: unset;
-    }
-}
-@media (max-width: 576px) {
-    .calculating__choose {
-        flex-direction: column;
-    }
-}
+
 @media (max-width: 576px) {
     .calculating h2 {
         text-align: center;
@@ -216,17 +195,11 @@
     height: 40px;
     padding: 11px;
     background: var(--btn-light-bg-color);
-}
-.btn__choose:hover {
-    cursor: pointer;
-}
-.btn__choose_active {
-    background: var(--btn-dark-bg-color);
-    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
-}
-.calculating__result {
-    font-size: 50px;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    margin: auto;
+    &:hover {
+        cursor: pointer;
+    }
+    &_active {
+        background: var(--btn-dark-bg-color);
+        box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    }
 }

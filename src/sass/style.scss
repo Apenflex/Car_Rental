@@ -1,9 +1,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600&family=Ubuntu:wght@400;700&display=swap');
+@import 'blocks/common';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 @import 'base/mixins';
 
-@import 'blocks/common';
 @import 'blocks/buttons';
 @import 'blocks/block_name';
 @import 'blocks/titles';
@@ -26,6 +26,3 @@
 @import 'blocks/faq';
 @import 'blocks/contacts';
 @import 'blocks/footer';
-
-
-
